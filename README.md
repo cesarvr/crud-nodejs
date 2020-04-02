@@ -11,6 +11,10 @@ Create a ``NodeJS + MongoDB`` project on Openshift:
 > In this example I reduce the memory consumptions to ``80MB`` because it works well enough for development. 
 
 
+#### How Data Is Stored
+
+For that we use [Mongoose](https://www.npmjs.com/package/mongoose) framework for more information look the [usage guide.](https://github.com/cesarvr/crud-nodejs/tree/master/model)
+
 #### Delete
 
 To remove this project: 
