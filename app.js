@@ -9,6 +9,11 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
 
+app.get('/', (req, res)=> {
+  res.status(200).send({status: 'up and running'})
+})
+
+
 app.post('/api/form', (req, res)=> {
   console.log('body ->', req.body)
   let model = new Model(req.body)

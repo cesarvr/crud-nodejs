@@ -13,9 +13,11 @@ const Schema = mongoose.Schema;
 */
 
 let RecruitmentSchema = new Schema({
-    symptoms: {type: String, required: true, max: 200},
-    diagnosed: {type: Boolean, required: true}
-});
+    symptoms:  { type: String, required: true, max: 200 },
+    diagnosed: { type: Boolean, required: true },
+    lat: { type: Number, require: true },
+    lng: { type: Number, require: true }
+})
 
 
 // Export the model

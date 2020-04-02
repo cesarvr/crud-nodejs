@@ -14,7 +14,9 @@ describe('express rest api server', function(){
     let r = await superagent.post(`${URL}/api/form`)
       .send({
         symptoms: 'Headache and Dry Caugh',
-        diagnosed: false
+        diagnosed: false,
+        lat: 53.3397249,
+        lng: -6.2568623
       })
 
     console.log(r.status)
@@ -53,6 +55,7 @@ describe('express rest api server', function(){
     assert.isDefined(resp)
     let item = resp.body
     assert.isDefined(item)
+
   })
 
   it('updates an object', async function(){
